@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap');
 
 :root {
     --white: hsl(0, 0%, 100%);
@@ -9,11 +9,13 @@
 
 body {
     height: 100vh;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Outfit', sans-serif;
     height: 100vh;
     overflow: hidden;
     margin: 0;
     display: flex;
+    flex-direction: column;
+    gap: 3rem;
     align-items: center;
     justify-content: center;
     background-color: var(--light-gray);
@@ -24,6 +26,7 @@ body {
     height: 30rem;
     background-color: var(--white);
     border-radius: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .1);
 }
 
 .card__img{
@@ -40,8 +43,7 @@ body {
 }
 
 .card__data h3{
-    font-size: 1.1rem;
-    font-weight: 700;
+    font-size: 1.3rem;
     line-height: 1.4rem;
     text-align: center;
     color: var(--dark-blue);
@@ -53,5 +55,8 @@ body {
     line-height: 1rem;
     text-align: center;
     color: var(--grayish-blue);
-    padding: 0 1rem;
+}
+
+.attribution a{
+    color: var(--dark-blue);
 }
