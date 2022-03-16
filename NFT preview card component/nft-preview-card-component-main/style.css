@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;800&display=swap');
+
+:root{
+    --soft-blue: hsl(215, 51%, 70%);
+    --cyan: hsl(178, 100%, 50%);
+    
+    --very-dark-blue: hsl(217, 54%, 11%);
+    --very-dark-blue-2: hsl(216, 50%, 16%);
+    --very-dark-blue-hr: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    font-family: 'Outfit', sans-serif;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    background-color: var(--very-dark-blue);
+}
+
+.card{
+    background-color: var(--very-dark-blue-2);
+    width: 20rem;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 15px;
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.img__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img__container img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+
+.heading h2{
+    font-size: 600;
+    color: var(--white);
+    line-height: 1rem;
+    margin-bottom: 1rem;
+}
+
+.heading p{
+    color: var(--soft-blue);
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.eth{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--very-dark-blue-hr);
+    padding: 0 0 1rem;
+}
+
+.eth-value{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.eth-value h3{
+    color: var(--cyan);
+    font-weight: normal;
+    font-size: 1rem;
+}
+
+.time{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.time p{
+    color: var(--soft-blue);
+    font-size: 1rem;
+}
+
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1rem;
+    margin-top: -1rem;
+}
+
+.user p{
+    font-size: .9rem;
+    color: var(--soft-blue);
+}
+
+.user p span{
+    color: var(--white);
+}
+
+.card .user img{
+    width: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+}
+
+.attribution {
+    color: var(--white);
+}
+
