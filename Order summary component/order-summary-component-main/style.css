@@ -25,6 +25,9 @@ body {
     align-items: center;
     justify-content: center;
     gap: 3rem;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
 .card {
