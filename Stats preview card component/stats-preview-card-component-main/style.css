@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --very-dark-blue: hsl(233, 47%, 7%);
+    --dark-desaturated-blue: hsl(244, 38%, 16%);
+    --soft-violet: rgb(170, 92, 219);
+    --white: hsl(0, 0%, 100%);
+    --light-white: hsla(0, 0%, 100%, 0.75);
+    --transparent-white: hsla(0, 0%, 100%, 0.6);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70rem;
+    background-color: var(--very-dark-blue);
+    border-radius: 10px;
+}
+
+.img {
+    width: 120%;
+    height: 100%;
+    position: relative;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 0 10px 10px 0;
+}
+
+.img .overlay {
+    /* display: none; */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--soft-violet);
+    z-index: 2;
+    mix-blend-mode: multiply
+}
+
+.data {
+    padding: 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.data .text {
+    text-align: left;
+}
+
+.data h2 {
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+}
+
+.data h2 span {
+    color: var(--soft-violet);
+}
+
+.data .text p {
+    margin-top: 1.5rem;
+    font-size: 1.3rem;
+    color: var(--transparent-white);
+    line-height: 2rem;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.stats h3 {
+    color: var(--light-white);
+    font-size: 1.8rem;
+}
+
+.stats p {
+    color: var(--transparent-white);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 1rem;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: .5rem;
+}
+
+.attribution a {
+    color: var(--soft-violet);
+}
+
+@media screen and (max-width: 1300px) {
+    .card {
+        flex-direction: column-reverse;
+        width: 35rem;
+    }
+
+    .data {
+        padding: 2rem;
+        gap: 3rem;
+    }
+
+    .img {
+        width: 100%;
+    }
+
+    .img img {
+        border-radius: 15px 15px 0 0;
+    }
+
+    .text h2 {
+        text-align: center;
+    }
+
+    .text p {
+        text-align: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .stat {
+        align-items: center;
+    }
+
+}
