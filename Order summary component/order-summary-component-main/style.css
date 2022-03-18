@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;600;700;800&display=swap');
+
+:root {
+    --pale-blue: hsl(225, 100%, 94%);
+    --bright-blue: hsl(245, 75%, 52%);
+    --very-pale-blue: hsl(225, 100%, 98%);
+    --desaturated-blue: rgb(114, 128, 167);
+    --desaturated-blue2: rgba(114, 128, 167, .5);
+    --dark-blue: hsl(223, 47%, 23%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    background-color: var(--pale-blue);
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.card {
+    background-color: #fff;
+    box-shadow: 0 1px 10px var(--desaturated-blue2);
+    border-radius: 15px;
+    width: 25rem;
+}
+
+.hero__img {
+    width: 100%;
+    border-radius: 15px 15px 0 0;
+    margin-bottom: .5rem;
+}
+
+.data {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+}
+
+.data>h2 {
+    font-size: 1.7rem;
+    color: hsl(223, 47%, 23%);
+}
+
+.data>p {
+    font-size: 1.1rem;
+    color: var(--desaturated-blue);
+    font-weight: bold;
+    opacity: .8;
+    line-height: 1.8rem;
+}
+
+.plan__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--very-pale-blue);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.plan {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.plan>img {
+    width: 55px;
+}
+
+.price {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.price h3 {
+    font-size: 1.2rem;
+}
+
+.price p {
+    font-size: 1rem;
+    color: var(--desaturated-blue);
+    font-weight: bold;
+    opacity: .8;
+}
+
+.plan__container >a {
+    font-size: 1.05rem;
+    font-weight: bold;
+    color: var(--dark-blue)
+}
+
+.payment {
+    display: block;
+    width: 100%;
+    background-color: var(--bright-blue);
+    padding: 1.2rem 1rem;
+    border-radius: 10px;
+    color: var(--very-pale-blue);
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    box-shadow: 0 1px 10px var(--desaturated-blue2);
+    margin: .5rem 0;
+}
+
+.cancel{
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: var(--desaturated-blue);
+    padding: 0 0 .5rem;
+}
