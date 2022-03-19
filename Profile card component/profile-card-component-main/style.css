@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root {
+    --dark-cyan: hsl(185, 75%, 39%);
+    --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+    --dark-grayish-blue: hsl(227, 10%, 46%);
+    --dark-gray: hsl(0, 0%, 59%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--dark-cyan);
+    gap: 3rem;
+}
+
+.bg1,
+.bg2 {
+    position: absolute;
+    z-index: -1;
+}
+
+.bg1 {
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -50%);
+}
+
+.bg2 {
+    bottom: 0;
+    right: 0;
+    transform: translate(50%, 50%);
+}
+
+.card {
+    background-color: #fff;
+    width: 25rem;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    margin-top: 3rem;
+}
+
+.data {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.data .user-image {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 110px;
+    aspect-ratio: 1;
+    border-radius: 50%;
+    border: 6px solid #fff;
+}
+
+.user-data {
+    margin-top: 60px;
+}
+
+.user-name {
+    text-align: center;
+}
+
+.user-name h3 {
+    font-size: 1.5rem;
+    color: var(--very-dark-desaturated-blue);
+    margin-bottom: .5rem;
+}
+
+.user-name h3 span {
+    color: var(--dark-gray);
+}
+
+.pattern {
+    border-radius: 1rem 1rem 0 0;
+}
+
+.user-name p {
+    color: var(--dark-gray);
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+.stats {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3rem;
+    margin-top: 2rem;
+    border-top: 1px solid #ddd;
+}
+
+.stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+}
+
+.stat h3 {
+    font-size: 1.5rem;
+    color: var(--very-dark-desaturated-blue);
+}
+
+.stat p {
+    font-size: 1.2rem;
+    color: var(--dark-gray);
+}
+
+.attribution{
+    font-size: 1.2rem;
+}
+
+.attribution a{
+    color: var(--very-dark-desaturated-blue); 
+}
+
+
+@media screen and (min-width: 1020px) {
+    .card {
+        width: 30rem;
+    }
+
+    .data .user-image {
+        width: 150px;
+    }
+
+    .user-data {
+        margin-top: 80px;
+    }
+
+
+    .user-name h3 {
+        font-size: 1.8rem;
+    }
+
+    .user-name p {
+        font-size: 1.5rem;
+    }
+
+    .stats {
+        padding: 2rem 3rem;
+        margin-top: 3rem;
+    }
+
+    .stat h3 {
+        font-size: 1.6rem;
+    }
+
+    
+.stat p {
+    font-size: 1.3rem;
+}
+}
