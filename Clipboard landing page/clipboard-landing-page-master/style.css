@@ -1,0 +1,552 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;500;600;700&display=swap');
+
+:root {
+    --strong-cyan: hsl(171, 66%, 44%);
+    --light-blue: hsl(233, 100%, 69%);
+    --dark-grayish-blue: hsl(210, 10%, 33%);
+    --grayish-blue: hsl(201, 11%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    overflow-x: hidden;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    top: 0;
+    left: 0;
+    background: url(images/bg-header-mobile.png) no-repeat center center/cover;
+    z-index: -1;
+}
+
+.section-a {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    margin: 7rem 0;
+    padding: 0 3rem;
+}
+
+.logo {
+    width: 30%;
+    opacity: .9;
+}
+
+.section-a .content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.section-a .heading h1 {
+    font-size: 2.5rem;
+    color: var(--dark-grayish-blue);
+    margin-bottom: 1rem;
+    opacity: .9;
+}
+
+.section-a .heading p {
+    font-size: 1.25rem;
+    color: var(--grayish-blue);
+    line-height: 1.5;
+    font-weight: 600;
+    opacity: .7;
+}
+
+.section-a .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.section-a .buttons .btn {
+    text-decoration: none;
+    background-color: var(--strong-cyan);
+    color: #fff;
+    padding: 1.25rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+    box-shadow: 0 .2rem .25rem hsl(171, 66%, 25%);
+}
+
+.section-a .buttons .btn:last-child {
+    background-color: var(--light-blue);
+    box-shadow: 0 .2rem .25rem hsl(233, 45%, 51%);
+}
+
+.btn:hover {
+    transition: .3s ease-in-out;
+    opacity: .9;
+}
+
+.section-b {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 9rem;
+}
+
+.section-b .heading {
+    text-align: center;
+}
+
+.section-b .heading h2 {
+    font-size: 1.8rem;
+    color: var(--dark-grayish-blue);
+    opacity: .9;
+}
+
+.section-b .heading p {
+    font-size: 1.2rem;
+    color: var(--grayish-blue);
+    opacity: .6;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+}
+
+.section-b .main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 4rem;
+}
+
+.section-b .main img {
+    width: 100%;
+}
+
+.section-b .main .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.section-b .main .features .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    padding: 0 1rem;
+}
+
+.section-b .main .features .feature h3 {
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+    opacity: .9;
+}
+
+.section-b .main .features .feature p {
+    font-size: 1.1rem;
+    color: var(--grayish-blue);
+    opacity: .75;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+
+.section-c {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 9rem;
+}
+
+.section-c .heading {
+    text-align: center;
+}
+
+.section-c .heading h2 {
+    font-size: 1.8rem;
+    color: var(--dark-grayish-blue);
+    opacity: .9;
+}
+
+.section-c .heading p {
+    font-size: 1.2rem;
+    color: var(--grayish-blue);
+    opacity: .6;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    line-height: 1.5;
+}
+
+.devices {
+    width: 100%;
+}
+
+
+
+.section-d {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 9rem;
+}
+
+.section-d .heading {
+    text-align: center;
+}
+
+.section-d .heading h2 {
+    font-size: 1.8rem;
+    color: var(--dark-grayish-blue);
+    opacity: .9;
+}
+
+.section-d .heading p {
+    font-size: 1.2rem;
+    color: var(--grayish-blue);
+    opacity: .6;
+    font-weight: 600;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.section-d .features {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.section-d .features .feature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.section-d .features .feature .content {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.section-d .features .feature h3 {
+    font-size: 1.5rem;
+    color: var(--dark-grayish-blue);
+    opacity: .9;
+}
+
+.section-d .features .feature p {
+    font-size: 1.1rem;
+    color: var(--grayish-blue);
+    opacity: .75;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+
+.section-e {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 9rem;
+}
+
+
+.section-f {
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    align-items: center;
+    margin-bottom: 9rem;
+}
+
+
+.section-f .heading {
+    text-align: center;
+}
+
+.section-f .heading h2 {
+    font-size: 2rem;
+    color: var(--dark-grayish-blue);
+    opacity: .9;
+}
+
+.section-f .heading p {
+    font-size: 1.2rem;
+    color: var(--grayish-blue);
+    opacity: .6;
+    font-weight: 600;
+    margin-top: 1rem;
+    line-height: 1.5;
+}
+
+.section-f .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.section-f .buttons .btn {
+    text-decoration: none;
+    background-color: var(--strong-cyan);
+    color: #fff;
+    padding: 1.25rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    width: 100%;
+    box-shadow: 0 .2rem .25rem hsl(171, 66%, 25%);
+}
+
+.section-f .buttons .btn:last-child {
+    background-color: var(--light-blue);
+    box-shadow: 0 .2rem .25rem hsl(233, 45%, 51%);
+}
+
+
+.footer {
+    padding: 3rem 3rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 3rem;
+    text-align: center;
+    background-color: hsla(202, 11%, 66%, 0.109);
+}
+
+
+.footer .first {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+}
+
+.footer .logo {
+    width: 5rem;
+}
+
+.footer .links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer .one {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer .two {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer .links a {
+    color: var(--grayish-blue);
+    font-weight: 600;
+    font-size: 1.25rem;
+    text-decoration: none;
+    transition: .3s ease-in-out;
+}
+
+.footer .links a:hover {
+    color: var(--strong-cyan);
+}
+
+.footer .icons {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.footer .icons svg {
+    width: 2rem;
+    aspect-ratio: 1;
+}
+
+.footer .icons svg:hover path {
+    cursor: pointer;
+    fill: var(--strong-cyan);
+    transition: .3s ease-in-out;
+}
+
+.attribution {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.attribution a {
+    color: var(--strong-cyan);
+}
+
+
+@media screen and (min-width: 1440px) {
+    .bg {
+        background: url(images/bg-header-desktop.png) no-repeat center center/cover;
+    }
+
+    .section-a {
+        gap: 4rem;
+        margin: 0 0 7rem;
+    }
+
+    .logo {
+        width: 10%;
+    }
+
+
+    .section-a .heading {
+        width: 65%;
+    }
+
+
+    .section-a .buttons {
+        flex-direction: row;
+        width: 55%;
+    }
+
+    .section-b {
+        padding: 0 0rem;
+    }
+
+    .section-b .heading {
+        width: 65%;
+    }
+
+
+    .section-b .main {
+        flex-direction: row;
+        padding-right: 3rem;
+    }
+
+    .section-b .main img {
+        width: 50%;
+    }
+
+    .section-b .main .features {
+        align-items: start;
+        gap: 4rem;
+    }
+
+    .section-b .main .features .feature {
+        align-items: start;
+        width: 85%;
+    }
+
+
+    .section-b .main .features .feature p {
+        text-align: left;
+    }
+
+
+
+
+    .section-c img {
+        width: 50%;
+    }
+
+    .section-c .heading {
+        width: 55%;
+    }
+
+
+
+    .section-d .features {
+        flex-direction: row;
+        gap: 0rem;
+    }
+
+    .section-d .features .feature {
+        width: 30%;
+    }
+
+
+
+    .section-e {
+        flex-direction: row;
+        gap: 6rem;
+        justify-content: center;
+    }
+
+
+
+    .section-f .heading {
+        text-align: center;
+        width: 65%;
+    }
+
+
+    .section-f .buttons {
+        width: 55%;
+    }
+
+
+    .footer {
+        padding: 3rem 10rem;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer .first {
+        flex-direction: row;
+        gap: 10rem;
+    }
+
+    .footer .links {
+        flex-direction: row;
+        align-items: start;
+        gap: 4rem;
+    }
+
+    .footer .one {
+        align-items: start;
+    }
+
+    .footer .two {
+        align-items: start;
+    }
+}
